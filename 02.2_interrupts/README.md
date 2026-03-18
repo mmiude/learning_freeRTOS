@@ -1,12 +1,3 @@
-# rp2040-freertos-CPP-template
+#Exercise 2 part 2
 
-The template is based on https://github.com/LearnEmbeddedSystems/rp2040-freertos-template.git
-
-
-This is a template project for developing FreeRTOS based applications on Raspberry Pi RP2040 based boards. This template uses the "official" RP2040 port from the Raspberry Pi Foundation. 
-
-Unmodified, this project will spawn two tasks to blink LEDs on and off.
-
-Start a terminal, go to (use <kbd>cd</kbd> command) the directory where you want to copy the project to. Then run:
-
-<kbd>git clone --recurse-submodules https://gitlab.metropolia.fi/lansk/rp2040-freertos-cpp-template</kbd>
+This exercise uses GPIO interrupts and a queue to handle a rotary encoder and push button. Tasks respond to button presses to toggle an LED and adjust its blink frequency based on the rotary knob, demonstrating interrupt-driven input handling.
